@@ -1,0 +1,15 @@
+- Nommé : Richard coeur de lion
+- Milieu social :
+Richard est un pro. Possède tous les jeux, tous les goodies, même les plus cher et les plus rares
+
+- Age 20 ans
+
+- Expertise informatique Richard a l'habitude de jouer à bon nombre de jeux vidéo et sais émuler les anciens jeux pokémon sur ordinateur et téléphone.
+
+- Expertise sur le sujet traité Il connait tout de l'univers pokémon et peut citer chacun d'eux depuis les 151 premiers, trié par id du pokédex.
+
+- Utilisation principale de l'application (Pour qui, pourquoi, comment) Finir le jeu à 100%
+
+- Utilisation secondaire de l'application (Pour qui, pourquoi, comment) Trouver des bugs pour améliorer le jeu et cet univers qu'il aime tant.
+
+- Pourquoi cette application et pas une autre : car c'est pokémon.
