@@ -1,16 +1,31 @@
-- Nommé : Bob Dupont
+################################################################################
+                            Bob DUPONT
+################################################################################
+
 - Milieu social :
 Bob n'est pas particulière fan de pokémon, mais il suis la
 tendance de la cours de récréation, avec ses copains de CM2
 
-- Age 10 ans
 
-- Expertise informatique A déjà joué à d'autre pokémon sur Gameboy
+- Age : 10 ans
 
-- Expertise sur le sujet traité Il a vu des épisodes de Pokémon et a des cartes à collectionner. A découvert le jeu via ses copains d'école.
 
-- Utilisation principale de l'application (Pour qui, pourquoi, comment) Il veut finir le jeu avant ses amis
+- Expertise informatique :
+A déjà joué à d'autre pokémon sur Gameboy
 
-- Utilisation secondaire de l'application (Pour qui, pourquoi, comment) Suivre les mêmes aventure que le héro de la série.
 
-- Pourquoi cette application et pas une autre : car c'est le jeu à la mode.
+- Expertise sur le sujet traité :
+Il a vu des épisodes de Pokémon et possède quelques cartes à collectionner.
+A découvert le jeu via ses copains d'école.
+
+
+- Utilisation principale de l'application :
+ Il veut finir le jeu avant ses amis
+
+
+- Utilisation secondaire de l'application :
+ Suivre les mêmes aventures que le héro de la série.
+
+
+- Pourquoi cette application et pas une autre :
+car c'est le jeu à la mode.
