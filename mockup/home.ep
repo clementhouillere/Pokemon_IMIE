@@ -8,49 +8,21 @@
             <span style="position: absolute; bottom: -1.5em; margin-left: -2px; left: 0em; font: -moz-list; font-size: 10px; opacity: 0.3; height: 1.2em; overflow: hidden; visibility: hidden; display: none;" p:name="prototypeMarker" id="0eac1e63831d48319b08b65780bc6644">notice: mockup user interface</span>
         </div>
             </foreignObject>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="c5caa525769144c092041257fa75d072" transform="matrix(1,0,0,1,4,16)"><p:metadata><p:property name="box"><![CDATA[890,680]]></p:property><p:property name="imageData"><![CDATA[2560,1600,../Downloads/pokemon_large.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
-            <defs>
-                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="7315119950b8480290c52ff63623d749">
-                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
-                </filter>
-                <g p:name="container" id="ddcca06c42d749f594186b40142bcaa6">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="08389ad9e1af4b0ebedfa2e11f723e16" width="890" height="680" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="c60de226a4c245cab823b21c6d74aab1" transform="scale(0.34765625,0.425)">
-                        <image x="0" y="0" p:name="image" id="850cc203afec45469aa6d639a187c0c2" xlink:href="../Downloads/pokemon_large.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2560" height="1600"/>
-                    </g>
-                </g>
-            </defs>
-            <use xlink:href="#ddcca06c42d749f594186b40142bcaa6" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#7315119950b8480290c52ff63623d749)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="91891b2ad1324d46b46fc992f2ef4bde"/>
-            <use xlink:href="#ddcca06c42d749f594186b40142bcaa6" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="ab6881b5f2a546c7890074be1e977d25" transform="matrix(1,0,0,1,304,478)"><p:metadata><p:property name="box"><![CDATA[255,94]]></p:property><p:property name="imageData"><![CDATA[255,94,../Downloads/Bouton_jouer.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
-            <defs>
-                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="bc6324d438714c56b058d46c6e666603">
-                    <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
-                </filter>
-                <g p:name="container" id="64ce3b506c8c467eb7429cfd314eda03">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="2cc299a9f313417190f4be197b7446ea" width="255" height="94" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="24ef8d7d31a64627972a10f31154fd64" transform="scale(1,1)">
-                        <image x="0" y="0" p:name="image" id="daf5a7468001472e86aadb24b5512e42" xlink:href="../Downloads/Bouton_jouer.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="94"/>
-                    </g>
-                </g>
-            </defs>
-            <use xlink:href="#64ce3b506c8c467eb7429cfd314eda03" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#bc6324d438714c56b058d46c6e666603)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="80bcfd3e279748068800f6dc29c51d08"/>
-            <use xlink:href="#64ce3b506c8c467eb7429cfd314eda03" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="2ea6ce05b1d2440a80793d985843e9fd" transform="matrix(1,0,0,1,5,16)"><p:metadata><p:property name="box"><![CDATA[890,680]]></p:property><p:property name="imageData"><![CDATA[2560,1600,res/pokemon_large.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="2ea6ce05b1d2440a80793d985843e9fd" transform="matrix(1,0,0,1,5,24)"><p:metadata><p:property name="box"><![CDATA[890,670]]></p:property><p:property name="imageData"><![CDATA[2560,1600,res/pokemon_large.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
             <defs>
                 <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="69aa207bf87a4e349b662637f0b70731">
                     <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
                 </filter>
                 <g p:name="container" id="7726a7d864fa4ba9903971411bf84e9a">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="9a5e9d75fa674fe3837b5b4759b44922" width="890" height="680" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="c1342c7d11d8411280a1617cf8c4db5a" transform="scale(0.34765625,0.425)">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="9a5e9d75fa674fe3837b5b4759b44922" width="890" height="670" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="c1342c7d11d8411280a1617cf8c4db5a" transform="scale(0.34765625,0.41875)">
                         <image x="0" y="0" p:name="image" id="5b0a956bbb944f5590f1e124e7a5df4e" xlink:href="res/pokemon_large.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2560" height="1600"/>
                     </g>
                 </g>
             </defs>
             <use xlink:href="#7726a7d864fa4ba9903971411bf84e9a" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#69aa207bf87a4e349b662637f0b70731)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="7d18490068ee4ce58dfb34aa2d6b9fbd"/>
             <use xlink:href="#7726a7d864fa4ba9903971411bf84e9a" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="4e626e093c7e453dbe1ba5ffa35020f3" transform="matrix(1,0,0,1,304,478)"><p:metadata><p:property name="box"><![CDATA[255,94]]></p:property><p:property name="imageData"><![CDATA[255,94,res/Bouton_jouer.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="4e626e093c7e453dbe1ba5ffa35020f3" transform="matrix(1,0,0,1,304,484)"><p:metadata><p:property name="box"><![CDATA[255,94]]></p:property><p:property name="imageData"><![CDATA[255,94,res/Bouton_jouer.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
             <defs>
                 <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="bb1c4e87216a4ed28aa9d99c8d46a474">
                     <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
