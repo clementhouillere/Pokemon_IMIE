@@ -5,5 +5,5 @@
 Pour résumer, on a :
 un utilisateur qui s'en moque, qui veut juste faire comme ses copains   => une interface rapide à prendre en main : commandes minimaliste
 un utilisateur qui veut des pokémon mignons                             => Du contenu et un jeu coloré
-un utilistauer qui veut finir à fond le jeu pour le défi                => Du contenu
+un utilistauer qui veut finir à fond le jeu pour le défi                => Du contenu et une interface fidelle aux anciens jeux pokémon
 un utilisateur qui veut modder                                          => Code source libre
