@@ -36,18 +36,18 @@
             </defs>
             <use xlink:href="#5b68cbc5e69048d4a59bf47adbc1c472" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#32e9f908c52e442cb1dd6f8bc790bd14)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="0aa5b115a4fa4d30a3ff52f9ed8674e0"/>
             <use xlink:href="#5b68cbc5e69048d4a59bf47adbc1c472" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="e42aa3d8b2ed4b9ca9e174dd36cc0715" transform="matrix(1,0,0,1,720,30)"><p:metadata><p:property name="box"><![CDATA[169,63]]></p:property><p:property name="imageData"><![CDATA[255,94,res/SuccÃ¨s.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="ad9b5ee5e1ca442f9675af922ae0521d" transform="matrix(1,0,0,1,706,30)"><p:metadata><p:property name="box"><![CDATA[178,66]]></p:property><p:property name="imageData"><![CDATA[255,94,res/Succes.png]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
             <defs>
-                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="e3bf6a60777c45e3bd98ff07e11e0511">
+                <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="5b8bbc5bedd94856a429eb2317b00e7e">
                     <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
                 </filter>
-                <g p:name="container" id="797149ac2cfa4fe5b9cad2cd416df7c4">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="67e2b2b909ae4a3a8b1e82a9ceec0a0a" width="169" height="63" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="d00bc2f9719c4ddd9a80c3cb77089266" transform="scale(0.6627450980392157,0.6702127659574468)">
-                        <image x="0" y="0" p:name="image" id="26c413e914b341839021bc8d24252dc0" xlink:href="res/SuccÃ¨s.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="94"/>
+                <g p:name="container" id="5b03af91f8b442cf846d898fa5da2741">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="5cd0d6242c2b468bbe9803c22278d0f7" width="178" height="66" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="5ee45ed2a1aa45ac9a8712be3d7f68a1" transform="scale(0.6980392156862745,0.7021276595744681)">
+                        <image x="0" y="0" p:name="image" id="6fad132b9dbc44b08490f81d8a9e15b5" xlink:href="res/Succes.png" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="94"/>
                     </g>
                 </g>
             </defs>
-            <use xlink:href="#797149ac2cfa4fe5b9cad2cd416df7c4" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#e3bf6a60777c45e3bd98ff07e11e0511)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="b0ce5068286c40c889c816a13abf9953"/>
-            <use xlink:href="#797149ac2cfa4fe5b9cad2cd416df7c4" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+            <use xlink:href="#5b03af91f8b442cf846d898fa5da2741" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(1, 1)" p:filter="url(#5b8bbc5bedd94856a429eb2317b00e7e)" style="opacity: 0.6; visibility: hidden; display: none;" p:name="bgCopy" id="cdae258e7725498f8acccd9811702e09"/>
+            <use xlink:href="#5b03af91f8b442cf846d898fa5da2741" xmlns:xlink="http://www.w3.org/1999/xlink"/>
         </g></Content></Page></Pages></Document>
