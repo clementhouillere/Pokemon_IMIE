@@ -8,14 +8,14 @@
             <span style="position: absolute; bottom: -1.5em; margin-left: -2px; left: 0em; font: -moz-list; font-size: 10px; opacity: 0.3; height: 1.2em; overflow: hidden; visibility: hidden; display: none;" p:name="prototypeMarker" id="76cac2b6e9444d4b95840f57d4ac9942">notice: mockup user interface</span>
         </div>
             </foreignObject>
-        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="3b8c1ddcbcf249dd84f22a1331d86453" transform="matrix(1,0,0,1,16,104)"><p:metadata><p:property name="box"><![CDATA[873,580]]></p:property><p:property name="imageData"><![CDATA[714,474,res/main_game.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
+        </g><g xmlns="http://www.w3.org/2000/svg" p:type="Shape" xmlns:p="http://www.evolus.vn/Namespace/Pencil" p:def="Evolus.Common:Bitmap" id="3b8c1ddcbcf249dd84f22a1331d86453" transform="matrix(1,0,0,1,-60,22)"><p:metadata><p:property name="box"><![CDATA[1005,668]]></p:property><p:property name="imageData"><![CDATA[714,474,res/main_game.jpg]]></p:property><p:property name="withBlur"><![CDATA[false]]></p:property><p:property name="fillColor"><![CDATA[#FFFFFF00]]></p:property><p:property name="strokeColor"><![CDATA[#000000FF]]></p:property><p:property name="strokeStyle"><![CDATA[0|]]></p:property></p:metadata>
             <defs>
                 <filter height="1.2558399" y="-0.12792" width="1.06396" x="-0.03198" p:name="imageShading" id="7e2b57f4ddc64e649cbcd7a010d424fe">
                     <feGaussianBlur stdDeviation="1.3325" in="SourceAlpha"/>
                 </filter>
                 <g p:name="container" id="d7cc06db3f354b54aa39c83d52519592">
-                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="4c09d0f60f7043c0961003f54413a29e" width="873" height="580" transform="translate(0,0)"/>
-                    <g p:name="imageContainer" id="4d22f5dbc8b9476cbd7a6b44cbab4ef4" transform="scale(1.2226890756302522,1.2236286919831223)">
+                    <rect style="fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0); stroke-opacity: 1; stroke-width: 0; fill-opacity: 0;" p:name="bgRect" id="4c09d0f60f7043c0961003f54413a29e" width="1005" height="668" transform="translate(0,0)"/>
+                    <g p:name="imageContainer" id="4d22f5dbc8b9476cbd7a6b44cbab4ef4" transform="scale(1.4075630252100841,1.409282700421941)">
                         <image x="0" y="0" p:name="image" id="96aafc0c83c74678913f675ec7e00676" xlink:href="res/main_game.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" width="714" height="474"/>
                     </g>
                 </g>
