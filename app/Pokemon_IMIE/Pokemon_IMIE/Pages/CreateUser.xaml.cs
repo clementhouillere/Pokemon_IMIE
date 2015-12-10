@@ -26,5 +26,6 @@ namespace Pokemon_IMIE.Pages
         {
             this.InitializeComponent();
         }
+
     }
 }
