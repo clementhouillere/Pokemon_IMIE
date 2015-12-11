@@ -47,7 +47,10 @@ namespace Pokemon_IMIE.usercontrols
             {
                 case "page1":
                     (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
-                    break;               
+                    break;
+                case "createUser":
+                    (Window.Current.Content as Frame).Navigate(typeof(Game));
+                    break;
             }
         }
     }
