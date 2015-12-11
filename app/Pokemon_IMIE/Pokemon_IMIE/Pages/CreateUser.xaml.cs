@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_IMIE.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace Pokemon_IMIE.Pages
         public CreateUser()
         {
             this.InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
         }
 
     }
