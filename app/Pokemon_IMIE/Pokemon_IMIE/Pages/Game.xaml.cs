@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_IMIE.usercontrols;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,60 @@ namespace Pokemon_IMIE.Pages
     /// </summary>
     public sealed partial class Game : Page
     {
+        private static int height = 25;
+        private static int width = 30;
         public Game()
         {
             this.InitializeComponent();
+            Window.Current.Content.KeyDown += move;
+            
+        }
+        public MainButton RetryButton { get { return this.retry_button; } }
+
+        private void move(object sender, KeyRoutedEventArgs e)
+        {
+            int size = 50;
+            
+            switch (e.Key)
+            {
+                case Windows.System.VirtualKey.Space:
+                    break;
+                case Windows.System.VirtualKey.D:
+                    this.moveRight();
+                    break;
+                case Windows.System.VirtualKey.Q:
+                    this.moveLeft();
+                    break;
+                case Windows.System.VirtualKey.S:
+                    this.moveDown();
+                    break;
+                case Windows.System.VirtualKey.Z:
+                    this.moveUp();
+                    break;
+                
+                default:
+                    break;
+            }
+        }
+
+
+        private void moveUp()
+        {
+            Canvas.SetTop(map, Canvas.GetTop(map) + height);
+        }
+        private void moveDown()
+        {
+            Canvas.SetTop(map, Canvas.GetTop(map) - height);
+        }
+        private void moveLeft()
+        {
+            Canvas.SetLeft(map, Canvas.GetLeft(map) + width);
+        }
+        private void moveRight()
+        {
+            Canvas.SetLeft(map, Canvas.GetLeft(map) -width);
         }
     }
+
+    
 }

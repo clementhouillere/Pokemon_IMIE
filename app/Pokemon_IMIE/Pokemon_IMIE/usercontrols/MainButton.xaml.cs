@@ -42,14 +42,22 @@ namespace Pokemon_IMIE.usercontrols
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-           String name = ((Page)((Frame) Window.Current.Content).Content).Name;
-            switch (name)
+           Page p = ((Page)((Frame) Window.Current.Content).Content);
+            switch (p.Name)
             {
                 case "page1":
                     (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
                     break;
                 case "createUser":
                     (Window.Current.Content as Frame).Navigate(typeof(Game));
+                    break;
+                case "game":
+                    Game g =((Game)p);
+                    if (this == g.RetryButton)
+                    {
+                        (Window.Current.Content as Frame).Navigate(typeof(MainPage));
+                    }
+                    
                     break;
             }
         }
