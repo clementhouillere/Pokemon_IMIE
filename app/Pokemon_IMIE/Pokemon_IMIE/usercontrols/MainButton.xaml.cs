@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_IMIE.Pages;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -33,5 +34,21 @@ namespace Pokemon_IMIE.usercontrols
 
         public static readonly DependencyProperty LabelProperty =
             DependencyProperty.Register("Label", typeof(string), typeof(MainButton), null);
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+           String name = ((Page)((Frame) Window.Current.Content).Content).Name;
+            switch (name)
+            {
+                case "page1":
+                    (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
+                    break;               
+            }
+        }
     }
 }
