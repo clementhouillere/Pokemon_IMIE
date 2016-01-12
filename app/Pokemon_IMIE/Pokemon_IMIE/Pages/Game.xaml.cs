@@ -76,6 +76,20 @@ namespace Pokemon_IMIE.Pages
         {
             Canvas.SetLeft(map, Canvas.GetLeft(map) -width);
         }
+
+        private void MainButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            MainButton success_button = (MainButton) sender;
+            if(success_menu.Visibility.Equals(Visibility.Collapsed))
+            {
+                success_menu.Visibility = Visibility.Visible;
+                success_button.Label = "< Retour";
+            } else
+            {
+                success_menu.Visibility = Visibility.Collapsed;
+                success_button.Label = "Succès >";
+            }
+        }
     }
 
     
