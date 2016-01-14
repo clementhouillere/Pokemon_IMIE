@@ -7,17 +7,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    x:Name="game">
-   
+    x:Name="game"
+    ScrollViewer.IsVerticalRailEnabled="True"
+    SizeChanged="game_SizeChanged">
 
     <Grid>
         <Canvas>
-            <Image x:Name="map" Source="../Assets/map.png" Stretch="Uniform" Canvas.Left="250" Canvas.Top="-200"/>
+            <Image x:Name="map" Source="../Assets/map.png" Stretch="Uniform" Canvas.Left="108" Canvas.Top="-328"/>
         </Canvas>
         <Image x:Name="player" Source="../Assets/player.png" Height="25" Margin="0,0,0,0" />
         <usersControls:MainButton HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="150" Label="Succès >" Tapped="MainButton_Tapped"/>
         <usersControls:MainButton x:Name="retry_button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="150" Label="Recommencer"/>
-        <Grid x:Name="success_menu" Background="#FF3E46CB" BorderBrush="White" Visibility="Collapsed" BorderThickness="1" Width="300" Height="500" HorizontalAlignment="Right">
+        <Grid x:Name="success_menu" Background="#FF3E46CB" BorderBrush="White" Visibility="Collapsed" BorderThickness="1" Width="300" Height="500" 
+              HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
