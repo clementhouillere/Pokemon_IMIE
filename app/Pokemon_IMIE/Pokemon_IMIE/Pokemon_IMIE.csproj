@@ -98,6 +98,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Pokemon.cs" />
     <Compile Include="Pages\Game.xaml.cs">
       <DependentUpon>Game.xaml</DependentUpon>
     </Compile>
@@ -110,6 +111,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usercontrols\MainButton.xaml.cs">
       <DependentUpon>MainButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\Pokedex.xaml.cs">
+      <DependentUpon>Pokedex.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="usercontrols\MainButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="usercontrols\Pokedex.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

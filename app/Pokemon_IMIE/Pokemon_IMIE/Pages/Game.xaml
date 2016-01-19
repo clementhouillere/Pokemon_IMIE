@@ -94,5 +94,9 @@
                 3%
             </TextBlock>
         </Grid>
+
+        <usersControls:Pokedex Visibility="Collapsed" x:Name="pokedex">
+            
+        </usersControls:Pokedex>
     </Grid>
 </Page>

@@ -104,7 +104,17 @@ namespace Pokemon_IMIE.Pages
                         x -= 1;
                     }
                     break;
-                
+                case Windows.System.VirtualKey.H:
+
+                    if (this.pokedex.Visibility.Equals(Visibility.Collapsed)){
+                        this.pokedex.Visibility = Visibility.Visible;
+                    } else
+                    {
+                        this.pokedex.Visibility = Visibility.Collapsed;
+                    }
+                    
+                    break;
+
                 default:
                     break;
             }
