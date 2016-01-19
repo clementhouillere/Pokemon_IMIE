@@ -31,6 +31,15 @@ namespace Pokemon_IMIE.usercontrols
             }
 
             this.pokemonList.ItemsSource = p;
+            String test = ((Pokemon) this.pokemonList.Items[0]).Nom;
+            this.pokemonName.Text = test;
+        }
+
+        private void pokemonList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Pokemon p = ((Pokemon)this.pokemonList.SelectedItem);
+
+            this.pokemonName.Text = p.Nom;
         }
     }
 }

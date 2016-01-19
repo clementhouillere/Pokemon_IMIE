@@ -10,9 +10,35 @@
     d:DesignWidth="400">
 
     <Grid>
-        <ListView Grid.Row="1" x:Name="pokemonList" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch">
-            <ListView.ItemTemplate>
+        <Grid.Background>
+            <SolidColorBrush Color="Blue" Opacity="0.8"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" x:Name="textBlock" HorizontalAlignment="Center" Grid.ColumnSpan="3" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Pokédex"/>
+        </TextBlock>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Grid.ColumnSpan="3" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Pokédex"/>
+        </TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Liste"/>
+        </TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Description"/>
+        </TextBlock>
+        
 
+
+        <ListView Grid.Row="2" Grid.Column="0" x:Name="pokemonList" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" SelectedItem="0" SelectionChanged="pokemonList_SelectionChanged">
+            <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -20,12 +46,15 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock x:Name="nom" Text="{Binding Nom}" />
-                        <TextBlock x:Name="prenom" Text="{Binding Prenom}" />
                     </Grid>
 
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
+
+        <TextBlock Grid.Column="1" Grid.Row="2" x:Name="pokemonName"  HorizontalAlignment="Center" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Nom"/>
+        </TextBlock>
     </Grid>
 </UserControl>
