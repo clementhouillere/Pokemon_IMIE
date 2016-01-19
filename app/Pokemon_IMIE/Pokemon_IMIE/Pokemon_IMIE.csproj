@@ -123,6 +123,15 @@
     <None Include="Pokemon_IMIE_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\001.png" />
+    <Content Include="Assets\002.png" />
+    <Content Include="Assets\003.png" />
+    <Content Include="Assets\004.png" />
+    <Content Include="Assets\005.png" />
+    <Content Include="Assets\006.png" />
+    <Content Include="Assets\007.png" />
+    <Content Include="Assets\008.png" />
+    <Content Include="Assets\009.png" />
     <Content Include="Assets\Jouer.png" />
     <Content Include="Assets\map.png" />
     <Content Include="Assets\player.png" />

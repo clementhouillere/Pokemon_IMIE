@@ -45,16 +45,44 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <TextBlock x:Name="nom" Text="{Binding Nom}" />
+                        <TextBlock x:Name="name" Text="{Binding Name}" />
                     </Grid>
 
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="2" x:Name="pokemonImage" Source="../Assets/007.png" Stretch="Uniform"/>
+            <TextBlock Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="ID"/>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="1" x:Name="pokemonID"  SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
 
-        <TextBlock Grid.Column="1" Grid.Row="2" x:Name="pokemonName"  HorizontalAlignment="Center" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+            </TextBlock>
+            
+            <TextBlock Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
         		<Run Text="Nom"/>
-        </TextBlock>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="2" x:Name="pokemonName" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+
+            </TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Left" VerticalAlignment="Top" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >
+        		<Run Text="Description"/>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Grid.Row="3" x:Name="pokemonDescription" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" TextWrapping="Wrap" >
+
+            </TextBlock>
+        </Grid>
     </Grid>
 </UserControl>
