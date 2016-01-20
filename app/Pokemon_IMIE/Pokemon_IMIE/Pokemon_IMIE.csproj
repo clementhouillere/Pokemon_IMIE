@@ -123,18 +123,31 @@
     <None Include="Pokemon_IMIE_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\001.png" />
-    <Content Include="Assets\002.png" />
-    <Content Include="Assets\003.png" />
-    <Content Include="Assets\004.png" />
-    <Content Include="Assets\005.png" />
-    <Content Include="Assets\006.png" />
-    <Content Include="Assets\007.png" />
-    <Content Include="Assets\008.png" />
-    <Content Include="Assets\009.png" />
     <Content Include="Assets\Jouer.png" />
     <Content Include="Assets\map.png" />
     <Content Include="Assets\player.png" />
+    <Content Include="Assets\pokemons\001.png" />
+    <Content Include="Assets\pokemons\002.png" />
+    <Content Include="Assets\pokemons\003.png" />
+    <Content Include="Assets\pokemons\004.png" />
+    <Content Include="Assets\pokemons\005.png" />
+    <Content Include="Assets\pokemons\006.png" />
+    <Content Include="Assets\pokemons\007.png" />
+    <Content Include="Assets\pokemons\008.png" />
+    <Content Include="Assets\pokemons\009.png" />
+    <Content Include="Assets\pokemons\010.png" />
+    <Content Include="Assets\pokemons\011.png" />
+    <Content Include="Assets\pokemons\015.png" />
+    <Content Include="Assets\pokemons\058.png" />
+    <Content Include="Assets\pokemons\059.png" />
+    <Content Include="Assets\pokemons\063.png" />
+    <Content Include="Assets\pokemons\069.png" />
+    <Content Include="Assets\pokemons\070.png" />
+    <Content Include="Assets\pokemons\092.png" />
+    <Content Include="Assets\pokemons\114.png" />
+    <Content Include="Assets\pokemons\125.png" />
+    <Content Include="Assets\pokemons\142.png" />
+    <Content Include="Assets\pokemons\150.png" />
     <Content Include="Assets\SplashScreen.scale-400.png" />
     <Content Include="Assets\sprite_player.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -172,6 +185,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
