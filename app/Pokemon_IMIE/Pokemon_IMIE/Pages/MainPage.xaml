@@ -12,19 +12,19 @@
             <Grid.Background>
                 <ImageBrush ImageSource="../Assets/Background.png"/>
             </Grid.Background>
-        <Grid Margin="200,50,200,50" >
+        <Grid Margin="125,50,125,50" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*" MinHeight="50"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" MinWidth="100"/>
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
 

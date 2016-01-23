@@ -166,7 +166,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="../Assets/Background.png"/>
         </Grid.Background>
-        <Grid Margin="200,50,200,50" >
+        <Grid Margin="125,50,125,50" >
             <Grid.Background>
                 <SolidColorBrush Color="Blue" Opacity="0.8"/>
             </Grid.Background>
@@ -176,12 +176,12 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*" MinHeight="50"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" MinWidth="100"/>
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" x:Name="textBlock" HorizontalAlignment="Center" Grid.ColumnSpan="3" VerticalAlignment="Center" SelectionHighlightColor="Yellow" Foreground="Yellow" FontSize="18.667" FontWeight="Bold" >

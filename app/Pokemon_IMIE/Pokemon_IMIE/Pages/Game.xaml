@@ -18,7 +18,7 @@
         <Image x:Name="player" Source="../Assets/player.png" Height="25" Margin="0,0,0,0" />
         <usersControls:MainButton HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="150" Label="Succès >" Tapped="MainButton_Tapped"/>
         <usersControls:MainButton x:Name="retry_button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="150" Label="Recommencer"/>
-        <Grid x:Name="success_menu" Background="#FF3E46CB" BorderBrush="White" Visibility="Collapsed" BorderThickness="1" Width="300" Height="500" 
+        <Grid x:Name="success_menu" Background="#FF3E46CB" BorderBrush="White" Visibility="Collapsed" BorderThickness="1" Width="300" Height="280" 
               HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
