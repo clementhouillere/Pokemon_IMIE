@@ -1,9 +1,9 @@
-################################################################################
+﻿################################################################################
                             Bob DUPONT
 ################################################################################
 
 - Milieu social :
-Bob n'est pas particulière fan de pokémon, mais il suis la
+Bob n'est pas particulièrement fan de pokémon, mais il suit la
 tendance de la cours de récréation, avec ses copains de CM2
 
 
@@ -11,7 +11,7 @@ tendance de la cours de récréation, avec ses copains de CM2
 
 
 - Expertise informatique :
-A déjà joué à d'autre pokémon sur Gameboy
+A déjà joué à d'autres pokémons sur Gameboy
 
 
 - Expertise sur le sujet traité :
@@ -24,7 +24,7 @@ A découvert le jeu via ses copains d'école.
 
 
 - Utilisation secondaire de l'application :
- Suivre les mêmes aventures que le héro de la série.
+ Suivre les mêmes aventures que le héros de la série.
 
 
 - Pourquoi cette application et pas une autre :

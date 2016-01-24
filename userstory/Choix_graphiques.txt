@@ -1,4 +1,4 @@
-################################################################################
+﻿################################################################################
           Description des choix graphiques en fonction des userstory
 ################################################################################
 
@@ -7,5 +7,9 @@ un design simple permettra aux moddeurs (Néo) d'ajouter rapidement leurs idées
 sans impacter le jeu original des autres joueurs, qui ne veulent jouer qu'à la version originale.
 
 Le style graphique se rapproche donc des premiers pokémon, sans être "has been"
-pour autant : ainsi les joueurs ayant connu les premiers jeu ne seront pas dépayser
+pour autant : ainsi les joueurs ayant connu les premiers jeu ne seront pas dépaysés
 et ceux qui ne connaissent pas auront tout de même un design agréable.
+
+Pour les couleurs, nous avons préférés un bleu représentant la loyauté des pokémons ainsi que la 
+sécurité qu'ils apportent au dresseur, ainsi que le jaune, pour mettre en avant l'énergie des pokémons 
+et le bonheur du dresseur.

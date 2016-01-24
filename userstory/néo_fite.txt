@@ -1,4 +1,4 @@
-################################################################################
+﻿################################################################################
                             Néo FITTS
 ################################################################################
 
@@ -12,7 +12,7 @@ technologiquement (smartphone, montre connectée, tablette...)
 
 
 - Expertise informatique :
-Néo est un développeur expérimenté, travail dans l'informatique et
+Néo est un développeur expérimenté, travaille dans l'informatique et
 est un moddeur reconnu dans le monde de pokémon
 
 

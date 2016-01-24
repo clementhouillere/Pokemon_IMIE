@@ -73,7 +73,6 @@ namespace Pokemon_IMIE.Pages
                 case Windows.System.VirtualKey.Space:
                     break;
                 case Windows.System.VirtualKey.D:
-                case Windows.System.VirtualKey.Right:
                     if (tab[x, y + 1] != 1)
                     {
                         this.moveRight(width);
@@ -81,7 +80,6 @@ namespace Pokemon_IMIE.Pages
                     }
                     break;
                 case Windows.System.VirtualKey.Q:
-                case Windows.System.VirtualKey.Left:
                     if (tab[x, y - 1] != 1)
                     {
                         this.moveLeft(width);
@@ -89,7 +87,6 @@ namespace Pokemon_IMIE.Pages
                     }
                     break;
                 case Windows.System.VirtualKey.S:
-                case Windows.System.VirtualKey.Down:
                     if (tab[x + 1, y] != 1)
                     {
                         this.moveDown(height);
@@ -97,7 +94,6 @@ namespace Pokemon_IMIE.Pages
                     }
                     break;
                 case Windows.System.VirtualKey.Z:
-                case Windows.System.VirtualKey.Up:
                     if (tab[x - 1, y] != 1)
                     {
                         this.moveUp(height);
