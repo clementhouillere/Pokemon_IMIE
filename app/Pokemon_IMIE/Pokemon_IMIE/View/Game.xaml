@@ -1,0 +1,102 @@
+﻿<Page
+    x:Class="Pokemon_IMIE.Pages.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:usersControls="using:Pokemon_IMIE.usercontrols"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pokemon_IMIE.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="game"
+    ScrollViewer.IsVerticalRailEnabled="True"
+    SizeChanged="game_SizeChanged">
+
+    <Grid>
+        <Canvas>
+            <Image x:Name="map" Source="../Assets/map.png" Stretch="Uniform" Canvas.Left="78" Canvas.Top="-360"/>
+        </Canvas>
+        <Image x:Name="player" Source="../Assets/player.png" Height="25" Margin="0,0,0,0" />
+        <usersControls:MainButton HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="150" Label="Succès >" Tapped="MainButton_Tapped"/>
+        <usersControls:MainButton x:Name="retry_button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="150" Label="Recommencer"/>
+        <Grid x:Name="success_menu" Background="#FF3E46CB" BorderBrush="White" Visibility="Collapsed" BorderThickness="1" Width="300" Height="280" 
+              HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,50,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Pokémons trouvés :
+            </TextBlock>
+            <TextBlock Grid.Row="0" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                100/255
+            </TextBlock>
+
+            <TextBlock Grid.Row="1" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Pokémons capturés :
+            </TextBlock>
+            <TextBlock Grid.Row="1" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                50/255
+            </TextBlock>
+
+            <TextBlock Grid.Row="2" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Quètes finies :
+            </TextBlock>
+            <TextBlock Grid.Row="2" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                0/10
+            </TextBlock>
+
+            <TextBlock Grid.Row="3" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Secrets trouvés :
+            </TextBlock>
+            <TextBlock Grid.Row="3" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                0/2
+            </TextBlock>
+
+            <TextBlock Grid.Row="4" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Temps passé :
+            </TextBlock>
+            <TextBlock Grid.Row="4" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                28 heures et 10 minutes
+            </TextBlock>
+
+            <TextBlock Grid.Row="5" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Badges obtenus :
+            </TextBlock>
+            <TextBlock Grid.Row="5" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                1/3
+            </TextBlock>
+
+            <TextBlock Grid.Row="6" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Jeu fini :
+            </TextBlock>
+            <TextBlock Grid.Row="6" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                0 fois
+            </TextBlock>
+
+            <TextBlock Grid.Row="7" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Pokémon préféré :
+            </TextBlock>
+            <TextBlock Grid.Row="7" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                Ratatouille
+            </TextBlock>
+
+            <TextBlock Grid.Row="8" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold">
+                Avancement :
+            </TextBlock>
+            <TextBlock Grid.Row="8" FontFamily="Arial" FontSize="16" Foreground="Yellow" FontWeight="Bold" FlowDirection="RightToLeft">
+                3%
+            </TextBlock>
+        </Grid>
+
+        <usersControls:Pokedex Visibility="Collapsed" x:Name="pokedex">
+            
+        </usersControls:Pokedex>
+    </Grid>
+</Page>
