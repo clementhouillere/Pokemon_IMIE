@@ -20,9 +20,9 @@
             <ColumnDefinition Width="0.5*"/>
             
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Content="{Binding Pokemon.Attaques[0].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button Grid.Row="0" Grid.Column="1" Content="{Binding Pokemon.Attaques[1].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button Grid.Row="1" Grid.Column="0" Content="{Binding Pokemon.Attaques[2].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-        <Button Grid.Row="1" Grid.Column="1" Content="{Binding Pokemon.Attaques[3].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Button Grid.Row="0" Grid.Column="0" Content="{Binding Pokemon.Attaques[0].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="attaque1"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="{Binding Pokemon.Attaques[1].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="attaque2"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="{Binding Pokemon.Attaques[2].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="attaque3"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="{Binding Pokemon.Attaques[3].Name}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="attaque4"/>
     </Grid>
 </local:BaseUserControl>

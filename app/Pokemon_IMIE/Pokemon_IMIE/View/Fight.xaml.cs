@@ -2,6 +2,7 @@
 using ClassLibrary;
 using Pokemon_IMIE.Model;
 using Pokemon_IMIE.Pages;
+using Pokemon_IMIE.usercontrols;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,10 +28,18 @@ namespace Pokemon_IMIE.Pages
     /// </summary>
     public sealed partial class Fight : Page
     {
+
+        public PokemonStatus Adversaire
+        {
+            get
+            {
+                return this.ItsStatus;
+            }
+        }
+
+
         public Fight()
         {
-            
-
             init();
         }
 
@@ -48,8 +57,10 @@ namespace Pokemon_IMIE.Pages
             Dresseur regis = l[4];
             Model.Pokemon p = ondine.pokemons[0];
             Model.Pokemon p2 = regis.pokemons[0];
+            
             this.ItsStatus.Pokemon = p;
             this.MyStatus.Pokemon = p2;
+            this.MesBoutons.View = this;
             this.MesBoutons.Pokemon = p2;
 
         }
