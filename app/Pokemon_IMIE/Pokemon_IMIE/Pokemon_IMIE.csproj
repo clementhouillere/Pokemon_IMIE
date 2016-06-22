@@ -99,6 +99,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\AttaqueApi.cs" />
+    <Compile Include="Model\DresseurApi.cs" />
+    <Compile Include="Model\PokemonApi.cs" />
+    <Compile Include="usercontrols\Base\BaseUserControl.cs" />
     <Compile Include="usercontrols\MesBoutons.xaml.cs">
       <DependentUpon>MesBoutons.xaml</DependentUpon>
     </Compile>

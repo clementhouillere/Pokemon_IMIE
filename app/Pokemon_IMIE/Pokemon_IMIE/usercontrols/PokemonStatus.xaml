@@ -1,4 +1,4 @@
-﻿<UserControl
+﻿<local:BaseUserControl
     x:Class="Pokemon_IMIE.usercontrols.PokemonStatus"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -21,8 +21,8 @@
 
         </Grid.ColumnDefinitions>
 
-        <ProgressBar Value="{Binding PokemonHp}" Maximum="{Binding PokemonMaxHp}" Grid.Row="0" Grid.Column="0"/>
-        <TextBlock Text="{Binding PokemonName}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Image Source="{Binding PokemonLogo}" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" />
+        <ProgressBar Value="{Binding Pokemon.Hp}" Maximum="{Binding Pokemon.MaxHp}" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="{Binding Pokemon.Name}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Source="{Binding Pokemon.Logo}" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" />
     </Grid>
-</UserControl>
+</local:BaseUserControl>

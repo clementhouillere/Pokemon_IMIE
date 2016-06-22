@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
         <usersControls:MainButton x:Name="ReturnButton" Grid.Row="0" Grid.Column="0" Label="Retour"/>
         <usersControls:PokemonStatus x:Name="ItsStatus" Grid.Row="1" Grid.ColumnSpan="2" />
-        <usersControls:PokemonStatus x:Name="MyStatus" Grid.Row="2" Grid.ColumnSpan="2" PokemonName="MOI"/>
+        <usersControls:PokemonStatus x:Name="MyStatus" Grid.Row="2" Grid.ColumnSpan="2"/>
         <usersControls:MesBoutons x:Name="MesBoutons" Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

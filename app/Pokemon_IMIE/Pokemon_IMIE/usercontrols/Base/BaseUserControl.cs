@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
-namespace TPCSharp.UserControls
+namespace Pokemon_IMIE.usercontrols
 {
     public class BaseUserControl : UserControl, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void onPropertyChanged(String name)
+        protected void OnPropertyChanged(String name)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null)

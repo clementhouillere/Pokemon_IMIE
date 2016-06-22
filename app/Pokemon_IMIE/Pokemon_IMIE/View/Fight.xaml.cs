@@ -30,16 +30,19 @@ namespace Pokemon_IMIE.Pages
         {
             this.InitializeComponent();
             this.DataContext = this;
-            this.ItsStatus.PokemonName = "Carapuce";
-            this.ItsStatus.PokemonLogo = "http://www.pokepedia.fr/images/thumb/c/cc/Carapuce-RFVF.png/250px-Carapuce-RFVF.png";
-            this.ItsStatus.PokemonHp = 50;
-            this.ItsStatus.PokemonMaxHp =100;
+            PokemonApi p1 = new PokemonApi();
+            p1.Logo = "http://assets.pokemon.com/assets/cms2/img/pokedex/full//007.png";
+            p1.Name = "Carapuce";
+            p1.Hp = 50;
+            p1.MaxHp = 100;
+            this.ItsStatus.Pokemon = p1;
 
-            this.MyStatus.PokemonName = "Bulbizarre";
-            this.MyStatus.PokemonLogo = "http://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/250px-Bulbizarre-RFVF.png";
-            this.MyStatus.PokemonHp = 75;
-            this.MyStatus.PokemonMaxHp = 100;
-
+            PokemonApi p2 = new PokemonApi();
+            p2.Logo = "http://assets.pokemon.com/assets/cms2/img/pokedex/full//001.png";
+            p2.Name = "Bulbizarre";
+            p2.Hp = 75;
+            p2.MaxHp = 100;
+            this.MyStatus.Pokemon = p2;
         }
     }
 }
