@@ -1,20 +1,24 @@
-﻿using Pokemon_IMIE.usercontrols;
+﻿using Pokemon_IMIE.Pages;
+using Pokemon_IMIE.usercontrols;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 
-// Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
-
-namespace Pokemon_IMIE.Pages
+namespace Pokemon_IMIE.ViewModel
 {
-    /// <summary>
-    /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
-    /// </summary>
-    public sealed partial class Game : Page
+    class GameViewModel
     {
-        private int x;
-        private int y;
-        private int[,] tab = new int[,] 
+        private GameView gameView;
+
+
+        private int x { get; set; }
+        private int y { get; set; }
+        private int[,] tab = new int[,]
         {
             { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
             { 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1},
@@ -26,41 +30,30 @@ namespace Pokemon_IMIE.Pages
             { 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0},
             { 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0}
         };
-        
-        public Game()
+
+        public GameView GameView
         {
-            this.InitializeComponent();
+            get { return gameView; }
+            set { gameView = value; }
+        }
+
+        public GameViewModel(GameView gameView)
+        {
+            this.gameView = gameView;
+            this.init();
+            this.Bind();
+        }
+
+        public void Bind()
+        {
+            this.GameView.SizeChanged += Game_SizeChanged;
+            this.GameView.MainButton.Tapped += MainButton_Tapped;
+        }
+
+        private void init() {
             Window.Current.Content.KeyDown += move;
             x = 3;
             y = 4;
-            
-        }
-        public MainButton RetryButton { get { return this.retry_button; } }
-
-        public int X
-        {
-            get
-            {
-                return x;
-            }
-
-            set
-            {
-                x = value;
-            }
-        }
-
-        public int Y
-        {
-            get
-            {
-                return y;
-            }
-
-            set
-            {
-                y = value;
-            }
         }
 
         private void move(object sender, KeyRoutedEventArgs e)
@@ -69,7 +62,7 @@ namespace Pokemon_IMIE.Pages
             int width = 32;
             switch (e.Key)
             {
-                
+
                 case Windows.System.VirtualKey.Space:
                     break;
                 case Windows.System.VirtualKey.D:
@@ -102,13 +95,15 @@ namespace Pokemon_IMIE.Pages
                     break;
                 case Windows.System.VirtualKey.H:
 
-                    if (this.pokedex.Visibility.Equals(Visibility.Collapsed)){
-                        this.pokedex.Visibility = Visibility.Visible;
-                    } else
+                    if (gameView.Pokedex.Visibility.Equals(Visibility.Collapsed))
                     {
-                        this.pokedex.Visibility = Visibility.Collapsed;
+                        gameView.Pokedex.Visibility = Visibility.Visible;
                     }
-                    
+                    else
+                    {
+                        gameView.Pokedex.Visibility = Visibility.Collapsed;
+                    }
+
                     break;
 
                 default:
@@ -119,46 +114,45 @@ namespace Pokemon_IMIE.Pages
 
         private void moveUp(int height)
         {
-            Canvas.SetTop(map, Canvas.GetTop(map) + height);
+            Canvas.SetTop(gameView.Map, Canvas.GetTop(gameView.Map) + height);
         }
         private void moveDown(int height)
         {
-            Canvas.SetTop(map, Canvas.GetTop(map) - height);
+            Canvas.SetTop(gameView.Map, Canvas.GetTop(gameView.Map) - height);
         }
         private void moveLeft(int width)
         {
-            Canvas.SetLeft(map, Canvas.GetLeft(map) + width);
+            Canvas.SetLeft(gameView.Map, Canvas.GetLeft(gameView.Map) + width);
         }
         private void moveRight(int width)
         {
-            Canvas.SetLeft(map, Canvas.GetLeft(map) -width);
+            Canvas.SetLeft(gameView.Map, Canvas.GetLeft(gameView.Map) - width);
         }
 
         private void MainButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            MainButton success_button = (MainButton) sender;
-            if(success_menu.Visibility.Equals(Visibility.Collapsed))
+            MainButton success_button = (MainButton)sender;
+            if (gameView.SuccessMenu.Visibility.Equals(Visibility.Collapsed))
             {
-                success_menu.Visibility = Visibility.Visible;
+                gameView.SuccessMenu.Visibility = Visibility.Visible;
                 success_button.Label = "< Retour";
-            } else
+            }
+            else
             {
-                success_menu.Visibility = Visibility.Collapsed;
+                gameView.SuccessMenu.Visibility = Visibility.Collapsed;
                 success_button.Label = "Succès >";
             }
         }
 
-        private void game_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void Game_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if (!e.PreviousSize.Width.Equals(0) && !e.PreviousSize.Height.Equals(0))
             {
                 int height = int.Parse((e.PreviousSize.Height - e.NewSize.Height).ToString());
                 int width = int.Parse((e.PreviousSize.Width - e.NewSize.Width).ToString());
-                moveRight(width/2);
-                moveDown(height/2);
+                moveRight(width / 2);
+                moveDown(height / 2);
             }
         }
     }
-
-    
 }
