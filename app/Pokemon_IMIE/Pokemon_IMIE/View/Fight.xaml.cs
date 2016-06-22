@@ -40,6 +40,8 @@ namespace Pokemon_IMIE.Pages
             this.InitializeComponent();
             this.DataContext = this;
             APIManager apiManager = new APIManager();
+
+            AttaqueResult r = await apiManager.Attaque<AttaqueResult>(10, 35, 11);
             List<Dresseur> l = await apiManager.GetFromAPI<List<Dresseur>>();
 
             Dresseur ondine = l[2];

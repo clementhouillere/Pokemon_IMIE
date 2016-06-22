@@ -79,5 +79,24 @@ namespace App2.API
 
             return isOK;
         }
+
+
+        public async Task<T> Attaque<T>(long attaquant, long attaque, long defenseur)
+        {
+            T item = default(T);
+            using (HttpClient client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://62.210.106.228:7777");
+                
+                HttpResponseMessage response = await client.GetAsync("attaque?attaquant="+attaquant+"&attaque="+attaque+"&defenseur="+defenseur);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    String result = await response.Content.ReadAsStringAsync();
+                    item = JsonConvert.DeserializeObject<T>(result);
+                }
+            }
+            return item;
+        }
     }
 }
