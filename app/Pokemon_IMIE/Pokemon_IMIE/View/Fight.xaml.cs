@@ -29,6 +29,17 @@ namespace Pokemon_IMIE.Pages
         public Fight()
         {
             this.InitializeComponent();
+            this.DataContext = this;
+            this.ItsStatus.PokemonName = "Carapuce";
+            this.ItsStatus.PokemonLogo = "http://www.pokepedia.fr/images/thumb/c/cc/Carapuce-RFVF.png/250px-Carapuce-RFVF.png";
+            this.ItsStatus.PokemonHp = 50;
+            this.ItsStatus.PokemonMaxHp =100;
+
+            this.MyStatus.PokemonName = "Bulbizarre";
+            this.MyStatus.PokemonLogo = "http://www.pokepedia.fr/images/thumb/e/ef/Bulbizarre-RFVF.png/250px-Bulbizarre-RFVF.png";
+            this.MyStatus.PokemonHp = 75;
+            this.MyStatus.PokemonMaxHp = 100;
+
         }
     }
 }

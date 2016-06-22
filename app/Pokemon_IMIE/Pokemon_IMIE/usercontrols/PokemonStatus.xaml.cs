@@ -19,9 +19,41 @@ namespace Pokemon_IMIE.usercontrols
 {
     public sealed partial class PokemonStatus : UserControl
     {
+
+        public static readonly DependencyProperty PokemonNameProperty =
+            DependencyProperty.Register("PokemonName", typeof(string), typeof(PokemonStatus), null);
+        public static readonly DependencyProperty PokemonLogoProperty =
+             DependencyProperty.Register("PokemonLogo", typeof(string), typeof(PokemonStatus), null);
+        public static readonly DependencyProperty PokemonHpProperty =
+             DependencyProperty.Register("PokemonHp", typeof(int), typeof(PokemonStatus), null);
+        public static readonly DependencyProperty PokemonMaxHpProperty =
+             DependencyProperty.Register("PokemonMaxHp", typeof(int), typeof(PokemonStatus), null);
+
         public PokemonStatus()
         {
             this.InitializeComponent();
+            this.DataContext = this;
+        }
+
+        public String PokemonName
+        {
+            get { return (string)GetValue(PokemonNameProperty); }
+            set { SetValue(PokemonNameProperty, value); }
+        }
+        public String PokemonLogo
+        {
+            get { return (string)GetValue(PokemonLogoProperty); }
+            set { SetValue(PokemonLogoProperty, value); }
+        }
+        public int PokemonHp
+        {
+            get { return (int)GetValue(PokemonHpProperty); }
+            set { SetValue(PokemonHpProperty, value); }
+        }
+        public int PokemonMaxHp
+        {
+            get { return (int)GetValue(PokemonMaxHpProperty); }
+            set { SetValue(PokemonMaxHpProperty, value); }
         }
     }
 }

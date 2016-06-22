@@ -106,6 +106,7 @@
       <DependentUpon>PokemonStatus.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\Class1.cs" />
+    <Compile Include="ViewModel\FightViewModel.cs" />
     <Compile Include="View\Fight.xaml.cs">
       <DependentUpon>Fight.xaml</DependentUpon>
     </Compile>

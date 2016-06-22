@@ -21,8 +21,8 @@
 
         </Grid.ColumnDefinitions>
 
-        <ProgressBar Value="50" Maximum="100" Grid.Row="0" Grid.Column="0"></ProgressBar>
-        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="id" Text="Pokemon Name" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Image HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Source="http://www.pokepedia.fr/images/thumb/c/cc/Carapuce-RFVF.png/250px-Carapuce-RFVF.png"></Image>
+        <ProgressBar Value="{Binding PokemonHp}" Maximum="{Binding PokemonMaxHp}" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="{Binding PokemonName}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Source="{Binding PokemonLogo}" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" />
     </Grid>
 </UserControl>
