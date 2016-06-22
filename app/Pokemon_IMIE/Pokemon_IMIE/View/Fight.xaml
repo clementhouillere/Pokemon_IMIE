@@ -20,6 +20,8 @@
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
         <usersControls:MainButton Grid.Row="0" Grid.Column="0" Label="Retour"/>
+        <usersControls:PokemonStatus Grid.Row="1" Grid.ColumnSpan="2"/>
+        <usersControls:PokemonStatus Grid.Row="2" Grid.ColumnSpan="2"/>
         <usersControls:MesBoutons Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

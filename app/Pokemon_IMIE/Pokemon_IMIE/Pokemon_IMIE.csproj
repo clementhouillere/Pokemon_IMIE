@@ -102,6 +102,9 @@
     <Compile Include="usercontrols\MesBoutons.xaml.cs">
       <DependentUpon>MesBoutons.xaml</DependentUpon>
     </Compile>
+    <Compile Include="usercontrols\PokemonStatus.xaml.cs">
+      <DependentUpon>PokemonStatus.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Class1.cs" />
     <Compile Include="View\Fight.xaml.cs">
       <DependentUpon>Fight.xaml</DependentUpon>
@@ -172,6 +175,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="usercontrols\MesBoutons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="usercontrols\PokemonStatus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
