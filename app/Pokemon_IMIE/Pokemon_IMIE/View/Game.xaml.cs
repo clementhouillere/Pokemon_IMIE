@@ -111,6 +111,13 @@ namespace Pokemon_IMIE.Pages
                     
                     break;
 
+                case Windows.System.VirtualKey.C:
+
+                    (Window.Current.Content as Frame).Navigate(typeof(Fight));
+                    break;
+
+
+
                 default:
                     break;
             }

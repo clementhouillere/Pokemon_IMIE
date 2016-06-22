@@ -109,6 +109,7 @@
   <ItemGroup>
     <Compile Include="Base\EntityBase.cs" />
     <Compile Include="Pokemon.cs" />
+    <Compile Include="PokemonApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\ClassLibrary.rd.xml" />
   </ItemGroup>

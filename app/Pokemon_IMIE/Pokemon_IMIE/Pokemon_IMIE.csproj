@@ -95,15 +95,19 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\APIManager.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="usercontrols\MesBoutons.xaml.cs">
+      <DependentUpon>MesBoutons.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Class1.cs" />
+    <Compile Include="View\Fight.xaml.cs">
+      <DependentUpon>Fight.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Game.xaml.cs">
       <DependentUpon>Game.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreateUser.xaml.cs">
       <DependentUpon>CreateUser.xaml</DependentUpon>
@@ -114,6 +118,9 @@
     </Compile>
     <Compile Include="usercontrols\Pokedex.xaml.cs">
       <DependentUpon>Pokedex.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -164,11 +171,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\Game.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="usercontrols\MesBoutons.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\MainPage.xaml">
+    <Page Include="View\Fight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Game.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -183,6 +194,10 @@
     <Page Include="usercontrols\Pokedex.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup />

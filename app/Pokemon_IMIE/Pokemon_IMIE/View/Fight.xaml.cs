@@ -24,17 +24,11 @@ namespace Pokemon_IMIE.Pages
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class CreateUser : Page
+    public sealed partial class Fight : Page
     {
-        public CreateUser()
+        public Fight()
         {
             this.InitializeComponent();
         }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
-        }
-
     }
 }
