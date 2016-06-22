@@ -10,11 +10,16 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
-
         </Grid.RowDefinitions>
-        <usersControls:MesBoutons Grid.Row="3"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <usersControls:MainButton Grid.Row="0" Grid.Column="0" Label="Retour"/>
+        <usersControls:MesBoutons Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>
