@@ -100,8 +100,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\AttaqueApi.cs" />
-    <Compile Include="Model\DresseurApi.cs" />
-    <Compile Include="Model\PokemonApi.cs" />
+    <Compile Include="Model\Dresseur.cs" />
+    <Compile Include="Model\Pokemon.cs" />
     <Compile Include="usercontrols\Base\BaseUserControl.cs" />
     <Compile Include="usercontrols\MesBoutons.xaml.cs">
       <DependentUpon>MesBoutons.xaml</DependentUpon>

@@ -11,14 +11,32 @@ namespace App2.API
 {
     public class APIManager
     {
-        public async Task<T> GetFromAPI<T>(Int32 id)
+        public async Task<T> GetFromAPI<T>()
         {
             T item = default(T);
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://pokeapi.co/api/v2/");
+                client.BaseAddress = new Uri("http://62.210.106.228:7777");
 
-                HttpResponseMessage response = await client.GetAsync(typeof(T).Name.ToLower() + "/" + id + "/");
+                HttpResponseMessage response = await client.GetAsync("dresseurs");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    String result = await response.Content.ReadAsStringAsync();
+                    item = JsonConvert.DeserializeObject<T>(result);
+                }
+            }
+            return item;
+        }
+
+        public async Task<T> GetFromAPI<T>(long id)
+        {
+            T item = default(T);
+            using (HttpClient client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://62.210.106.228:7777");
+
+                HttpResponseMessage response = await client.GetAsync("dresseurs/" + id);
 
                 if (response.IsSuccessStatusCode)
                 {

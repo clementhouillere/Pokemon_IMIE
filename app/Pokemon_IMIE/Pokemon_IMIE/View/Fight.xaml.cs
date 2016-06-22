@@ -1,5 +1,6 @@
 ﻿using App2.API;
 using ClassLibrary;
+using Pokemon_IMIE.Model;
 using Pokemon_IMIE.Pages;
 using System;
 using System.Collections.Generic;
@@ -28,21 +29,26 @@ namespace Pokemon_IMIE.Pages
     {
         public Fight()
         {
+            
+
+            init();
+        }
+
+
+        public async void init()
+        {
             this.InitializeComponent();
             this.DataContext = this;
-            PokemonApi p1 = new PokemonApi();
-            p1.Logo = "http://assets.pokemon.com/assets/cms2/img/pokedex/full//007.png";
-            p1.Name = "Carapuce";
-            p1.Hp = 50;
-            p1.MaxHp = 100;
-            this.ItsStatus.Pokemon = p1;
+            APIManager apiManager = new APIManager();
+            List<Dresseur> l = await apiManager.GetFromAPI<List<Dresseur>>();
 
-            PokemonApi p2 = new PokemonApi();
-            p2.Logo = "http://assets.pokemon.com/assets/cms2/img/pokedex/full//001.png";
-            p2.Name = "Bulbizarre";
-            p2.Hp = 75;
-            p2.MaxHp = 100;
+            Dresseur ondine = l[2];
+            Dresseur regis = l[4];
+            Model.Pokemon p = ondine.pokemons[0];
+            Model.Pokemon p2 = regis.pokemons[0];
+            this.ItsStatus.Pokemon = p;
             this.MyStatus.Pokemon = p2;
+
         }
     }
 }

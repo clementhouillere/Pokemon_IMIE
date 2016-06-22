@@ -1,4 +1,5 @@
 ﻿using ClassLibrary;
+using Pokemon_IMIE.Model;
 using Pokemon_IMIE.usercontrols;
 using System;
 using System.Collections.Generic;
@@ -22,9 +23,9 @@ namespace Pokemon_IMIE.usercontrols
     public sealed partial class PokemonStatus : BaseUserControl
     {
 
-        private PokemonApi pokemon;
+        private Model.Pokemon pokemon;
 
-        public PokemonApi Pokemon
+        public Model.Pokemon Pokemon
         {
             get { return pokemon; }
             set
