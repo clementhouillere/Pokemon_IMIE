@@ -4,10 +4,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
-namespace ClassLibrary.Base
+namespace TPCSharp.UserControls
 {
-    public class EntityBase : INotifyPropertyChanged
+    public class BaseUserControl : UserControl, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
