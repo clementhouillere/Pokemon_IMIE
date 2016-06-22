@@ -8,11 +8,12 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Pokemon_IMIE.usercontrols
 {
-    public sealed partial class Pokedex : UserControl
+    public sealed partial class Pokedex : BaseUserControl
     {
         public Pokedex()
         {
             this.InitializeComponent();
+            base.DataContext = this;
             List<Pokemon> pokemons = new List<Pokemon>();
 
             pokemons.Add(new Pokemon("001", "Bulbizarre", "Un mini pokemon plante !"));
