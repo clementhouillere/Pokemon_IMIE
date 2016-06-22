@@ -48,6 +48,7 @@ namespace Pokemon_IMIE.Pages
             Model.Pokemon p2 = regis.pokemons[0];
             this.ItsStatus.Pokemon = p;
             this.MyStatus.Pokemon = p2;
+            this.MesBoutons.Pokemon = p2;
 
         }
     }

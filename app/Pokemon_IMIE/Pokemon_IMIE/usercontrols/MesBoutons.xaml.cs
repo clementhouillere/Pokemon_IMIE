@@ -17,11 +17,25 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Pokemon_IMIE.usercontrols
 {
-    public sealed partial class MesBoutons : UserControl
+    public sealed partial class MesBoutons : BaseUserControl
     {
+
+        private Model.Pokemon pokemon;
+
+        public Model.Pokemon Pokemon
+        {
+            get { return pokemon; }
+            set
+            {
+                pokemon = value;
+                base.OnPropertyChanged("Pokemon");
+            }
+        }
+
         public MesBoutons()
         {
             this.InitializeComponent();
+            base.DataContext = this;
         }
     }
 }
