@@ -1,35 +1,25 @@
-﻿using Pokemon_IMIE.Pages;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+﻿// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
-// The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
+using Pokemon_IMIE.Pages;
+using System;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Input;
 
 namespace Pokemon_IMIE.usercontrols
 {
-    public sealed partial class MainButton : UserControl
+    public sealed partial class MainButton : BaseUserControl
     {
         public MainButton()
         {
             this.InitializeComponent();
-            this.DataContext = this;
+            base.DataContext = this;
         }
+
 
         public String Label
         {
-            get { return (string)GetValue(LabelProperty);}
-            set { SetValue(LabelProperty, value); }
+            get { return (string)base.GetValue(LabelProperty); }
+            set { base.SetValue(LabelProperty, value); }
         }
 
         public static readonly DependencyProperty LabelProperty =
@@ -41,23 +31,23 @@ namespace Pokemon_IMIE.usercontrols
         }
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-           Page p = ((Page)((Frame) Window.Current.Content).Content);
+        { 
+            Windows.UI.Xaml.Controls.Page p = ((Windows.UI.Xaml.Controls.Page)((Windows.UI.Xaml.Controls.Frame)Window.Current.Content).Content);
             switch (p.Name)
             {
                 case "page1":
-                    (Window.Current.Content as Frame).Navigate(typeof(CreateUser));
+                    (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(CreateUserView));
                     break;
                 case "createUser":
-                    (Window.Current.Content as Frame).Navigate(typeof(Game));
+                    (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(GameView));
                     break;
                 case "game":
-                    Game g =((Game)p);
+                    GameView g = ((GameView)p);
                     if (this == g.RetryButton)
                     {
-                        (Window.Current.Content as Frame).Navigate(typeof(MainPage));
+                        (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(MainPageView));
                     }
-                    
+
                     break;
             }
         }
