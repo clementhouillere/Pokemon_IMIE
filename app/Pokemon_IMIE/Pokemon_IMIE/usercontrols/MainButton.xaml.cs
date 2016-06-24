@@ -36,7 +36,7 @@ namespace Pokemon_IMIE.usercontrols
             switch (p.Name)
             {
                 case "page1":
-                    (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(CreateUser));
+                    (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(CreateUserView));
                     break;
                 case "createUser":
                     (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(GameView));
@@ -45,7 +45,7 @@ namespace Pokemon_IMIE.usercontrols
                     GameView g = ((GameView)p);
                     if (this == g.RetryButton)
                     {
-                        (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(MainPage));
+                        (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(MainPageView));
                     }
 
                     break;

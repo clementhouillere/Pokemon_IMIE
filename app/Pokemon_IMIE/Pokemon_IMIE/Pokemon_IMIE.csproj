@@ -99,15 +99,17 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="usercontrols\Base\BaseUserControl.cs" />
+    <Compile Include="ViewModel\CreateUserViewModel.cs" />
+    <Compile Include="ViewModel\MainPageViewModel.cs" />
     <Compile Include="ViewModel\GameViewModel.cs" />
     <Compile Include="View\GameView.xaml.cs">
       <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="View\MainPageView.xaml.cs">
+      <DependentUpon>MainPageView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\CreateUser.xaml.cs">
-      <DependentUpon>CreateUser.xaml</DependentUpon>
+    <Compile Include="View\CreateUserView.xaml.cs">
+      <DependentUpon>CreateUserView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usercontrols\MainButton.xaml.cs">
@@ -169,11 +171,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\MainPage.xaml">
+    <Page Include="View\MainPageView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\CreateUser.xaml">
+    <Page Include="View\CreateUserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

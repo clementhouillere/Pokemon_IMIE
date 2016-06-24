@@ -1,8 +1,6 @@
 ﻿using Pokemon_IMIE.usercontrols;
 using Pokemon_IMIE.ViewModel;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
 
