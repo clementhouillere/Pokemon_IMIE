@@ -99,31 +99,42 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Model\AttaqueApi.cs" />
     <Compile Include="Model\AttaqueResult.cs" />
     <Compile Include="Model\Dresseur.cs" />
     <Compile Include="Model\Pokemon.cs" />
     <Compile Include="usercontrols\Base\BaseUserControl.cs" />
-    <Compile Include="usercontrols\MesBoutons.xaml.cs" />
-    <Compile Include="ViewModel\CreateUserViewModel.cs" />
-    <Compile Include="ViewModel\MainPageViewModel.cs" />
-    <Compile Include="ViewModel\GameViewModel.cs" />
-    <Compile Include="View\GameView.xaml.cs">
-      <DependentUpon>GameView.xaml</DependentUpon>
+    <Compile Include="usercontrols\MesBoutons.xaml.cs">
       <DependentUpon>MesBoutons.xaml</DependentUpon>
     </Compile>
     <Compile Include="usercontrols\PokemonStatus.xaml.cs">
       <DependentUpon>PokemonStatus.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\Class1.cs" />
     <Compile Include="ViewModel\FightViewModel.cs" />
     <Compile Include="View\Fight.xaml.cs">
       <DependentUpon>Fight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Game.xaml.cs">
+      <DependentUpon>Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreateUser.xaml.cs">
+      <DependentUpon>CreateUser.xaml</DependentUpon>
+=======
+    <Compile Include="usercontrols\Base\BaseUserControl.cs" />
+    <Compile Include="ViewModel\CreateUserViewModel.cs" />
+    <Compile Include="ViewModel\MainPageViewModel.cs" />
+    <Compile Include="ViewModel\GameViewModel.cs" />
+    <Compile Include="View\GameView.xaml.cs">
+      <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainPageView.xaml.cs">
       <DependentUpon>MainPageView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreateUserView.xaml.cs">
       <DependentUpon>CreateUserView.xaml</DependentUpon>
+>>>>>>> 433fca4bc1a4bb5cddc16f14cc0e8e71cb4f3c6d
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usercontrols\MainButton.xaml.cs">
@@ -131,6 +142,9 @@
     </Compile>
     <Compile Include="usercontrols\Pokedex.xaml.cs">
       <DependentUpon>Pokedex.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -181,27 +195,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
     <Page Include="usercontrols\MesBoutons.xaml">
       <SubType>Designer</SubType>
+=======
+    <Page Include="View\GameView.xaml">
+>>>>>>> 433fca4bc1a4bb5cddc16f14cc0e8e71cb4f3c6d
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="usercontrols\PokemonStatus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="View\Fight.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\CreateUserView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Page Include="View\Game.xaml">
+=======
     <Page Include="View\MainPageView.xaml">
-      <SubType>Designer</SubType>
+>>>>>>> 433fca4bc1a4bb5cddc16f14cc0e8e71cb4f3c6d
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\GameView.xaml">
+    <Page Include="View\CreateUserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,7 +231,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
       <Project>{AB5D508A-38DD-42B6-846D-4E9054E33FA8}</Project>

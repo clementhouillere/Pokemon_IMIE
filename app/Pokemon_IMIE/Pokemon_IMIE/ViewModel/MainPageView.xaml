@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Pokemon_IMIE.Pages.MainPageView"
+    xmlns:usersControls="using:Pokemon_IMIE.usercontrols"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Pokemon_IMIE.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Name="page1">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="../Assets/Background.png"/>
+            </Grid.Background>
+        <Grid Margin="125,50,125,50" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*" MinHeight="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*" MinWidth="100"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <usersControls:MainButton Grid.Column="1" Grid.Row="5" Label="Jouer"/>
+        </Grid>
+    </Grid>
+</Page>
