@@ -6,6 +6,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*Pokemon_IMIE_StoreKey.pfx
+*Package.StoreAssociation.xml
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
