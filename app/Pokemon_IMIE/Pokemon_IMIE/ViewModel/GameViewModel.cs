@@ -54,6 +54,8 @@ namespace Pokemon_IMIE.ViewModel
             Window.Current.Content.KeyDown += move;
             x = 3;
             y = 4;
+            Canvas.SetTop(this.GameView.Map, - 590 + Window.Current.Bounds.Height / 2);
+            Canvas.SetLeft(this.GameView.Map, - 336 + Window.Current.Bounds.Width / 2);
         }
 
         private void move(object sender, KeyRoutedEventArgs e)

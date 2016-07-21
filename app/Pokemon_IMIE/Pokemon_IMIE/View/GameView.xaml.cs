@@ -15,6 +15,7 @@ namespace Pokemon_IMIE.Pages
         private GameViewModel gameViewModel;
 
         public Pokedex Pokedex { get; set; }
+        public Canvas Canvas { get; set; }
         public Image Map { get; set; }
         public Grid SuccessMenu { get; set; }
         public MainButton MainButton { get; set; }
@@ -24,6 +25,7 @@ namespace Pokemon_IMIE.Pages
         {
             this.InitializeComponent();
             this.Pokedex = this.pokedex;
+            this.Canvas = this.canvas;
             this.Map = this.map;
             this.SuccessMenu = this.success_menu;
             this.MainButton = this.mainButton;

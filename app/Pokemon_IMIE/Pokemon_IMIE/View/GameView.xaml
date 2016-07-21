@@ -11,8 +11,8 @@
     ScrollViewer.IsVerticalRailEnabled="True">
 
     <Grid>
-        <Canvas>
-            <Image x:Name="map" Source="../Assets/map.png" Stretch="Uniform" Canvas.Left="78" Canvas.Top="-360"/>
+        <Canvas x:Name="canvas">
+            <Image x:Name="map" Source="../Assets/map.png" Stretch="Uniform" />
         </Canvas>
         <Image x:Name="player" Source="../Assets/player.png" Height="25" Margin="0,0,0,0" />
         <usersControls:MainButton x:Name="mainButton" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="150" Label="Succès >"/>
