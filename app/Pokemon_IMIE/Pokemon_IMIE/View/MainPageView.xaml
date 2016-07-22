@@ -28,7 +28,7 @@
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
 
-            <usersControls:MainButton Grid.Column="1" Grid.Row="5" Label="Jouer"/>
+            <usersControls:MainButton x:Name="playButton" Grid.Column="1" Grid.Row="5" Label="Jouer"/>
         </Grid>
     </Grid>
 </Page>

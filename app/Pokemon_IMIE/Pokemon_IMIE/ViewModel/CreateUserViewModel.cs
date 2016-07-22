@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 
 namespace Pokemon_IMIE.ViewModel
 {
@@ -29,7 +30,7 @@ namespace Pokemon_IMIE.ViewModel
 
         public void Bind()
         {
-
+            this.createUserView.PlayButton.Tapped += PlayButton_Tapped;
         }
 
         private void init()
@@ -39,6 +40,11 @@ namespace Pokemon_IMIE.ViewModel
         private void button_Click(object sender, RoutedEventArgs e)
         {
             (Window.Current.Content as Frame).Navigate(typeof(CreateUserView));
+        }
+
+        private void PlayButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            (Window.Current.Content as Windows.UI.Xaml.Controls.Frame).Navigate(typeof(GameView));
         }
     }
 }

@@ -193,7 +193,7 @@
             <RadioButton Grid.Column="1" Grid.Row="3" x:Name="rb_girl" Content="Fille" HorizontalAlignment="Left" />
 
 
-            <usersControls:MainButton Grid.Column="1" Grid.Row="5" Label="Jouer"/>
+            <usersControls:MainButton x:Name="playButton" Grid.Column="1" Grid.Row="5" Label="Jouer"/>
 
         </Grid>
     </Grid>

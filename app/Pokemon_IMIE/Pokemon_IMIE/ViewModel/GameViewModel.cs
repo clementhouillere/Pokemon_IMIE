@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using System.Threading;
 
 namespace Pokemon_IMIE.ViewModel
 {
@@ -47,7 +48,8 @@ namespace Pokemon_IMIE.ViewModel
         public void Bind()
         {
             this.GameView.SizeChanged += Game_SizeChanged;
-            this.GameView.MainButton.Tapped += MainButton_Tapped;
+            this.GameView.MainButton.Tapped += Button_Tapped;
+            this.GameView.RetryButton.Tapped += Button_Tapped;
         }
 
         private void init() {
@@ -138,18 +140,25 @@ namespace Pokemon_IMIE.ViewModel
             Canvas.SetLeft(gameView.Map, Canvas.GetLeft(gameView.Map) - width);
         }
 
-        private void MainButton_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            MainButton success_button = (MainButton)sender;
-            if (gameView.SuccessMenu.Visibility.Equals(Visibility.Collapsed))
+            if (((MainButton)sender).Name.Equals("retryButton")) {
+
+                (Window.Current.Content as Frame).Navigate(typeof(MainPageView));
+
+            } else if (((MainButton)sender).Name.Equals("mainButton"))
             {
-                gameView.SuccessMenu.Visibility = Visibility.Visible;
-                success_button.Label = "< Retour";
-            }
-            else
-            {
-                gameView.SuccessMenu.Visibility = Visibility.Collapsed;
-                success_button.Label = "Succès >";
+                MainButton success_button = (MainButton)sender;
+                if (gameView.SuccessMenu.Visibility.Equals(Visibility.Collapsed))
+                {
+                    gameView.SuccessMenu.Visibility = Visibility.Visible;
+                    success_button.Label = "< Retour";
+                }
+                else
+                {
+                    gameView.SuccessMenu.Visibility = Visibility.Collapsed;
+                    success_button.Label = "Succès >";
+                }
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using Pokemon_IMIE.ViewModel;
+﻿using Pokemon_IMIE.usercontrols;
+using Pokemon_IMIE.ViewModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -14,9 +15,12 @@ namespace Pokemon_IMIE.Pages
 
         private CreateUserViewModel createUserViewModel;
 
+        public MainButton PlayButton { get; set; }
+
         public CreateUserView()
         {
             this.InitializeComponent();
+            this.PlayButton = this.playButton;
             this.createUserViewModel = new CreateUserViewModel(this);
         }
     }

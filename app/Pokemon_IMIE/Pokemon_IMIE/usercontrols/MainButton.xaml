@@ -78,6 +78,6 @@
     </UserControl.Resources>
 
     <Grid>
-        <Button Content="{Binding Label}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{StaticResource MainButtonStyle}" Tapped="Button_Tapped"/>
+        <Button Content="{Binding Label}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{StaticResource MainButtonStyle}" />
     </Grid>
 </local:BaseUserControl>

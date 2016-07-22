@@ -1,4 +1,5 @@
-﻿using Pokemon_IMIE.ViewModel;
+﻿using Pokemon_IMIE.usercontrols;
+using Pokemon_IMIE.ViewModel;
 using Windows.UI.Xaml.Controls;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -12,9 +13,12 @@ namespace Pokemon_IMIE.Pages
     {
         private MainPageViewModel mainPageViewModel;
 
+        public MainButton PlayButton { get; set; }
+
         public MainPageView()
         {
             this.InitializeComponent();
+            this.PlayButton = this.playButton;
             this.mainPageViewModel = new MainPageViewModel(this);
         }
     }
