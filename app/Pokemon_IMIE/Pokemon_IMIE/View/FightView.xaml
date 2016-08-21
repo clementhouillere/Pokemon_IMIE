@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Pokemon_IMIE.Pages.Fight"
+    x:Class="Pokemon_IMIE.Pages.FightView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Pokemon_IMIE"
@@ -19,9 +19,9 @@
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
-        <usersControls:MainButton x:Name="ReturnButton" Grid.Row="0" Grid.Column="0" Label="Retour"/>
-        <usersControls:PokemonStatus x:Name="ItsStatus" Grid.Row="1" Grid.ColumnSpan="2" />
-        <usersControls:PokemonStatus x:Name="MyStatus" Grid.Row="2" Grid.ColumnSpan="2"/>
-        <usersControls:MesBoutons x:Name="MesBoutons" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <usersControls:MainButton x:Name="returnButton" Grid.Row="0" Grid.Column="0" Label="Retour"/>
+        <usersControls:PokemonStatus x:Name="itsStatus" Grid.Row="1" Grid.ColumnSpan="2" />
+        <usersControls:PokemonStatus x:Name="myStatus" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <usersControls:MesBoutons x:Name="mesBoutons" Grid.Row="3" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

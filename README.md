@@ -5,3 +5,4 @@ Utilisation du clavier dans le jeu :
 
 Se déplacer : Z,Q,S,D
 Afficher le pokédex : H
+Lancer un combat : C

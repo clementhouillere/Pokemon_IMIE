@@ -22,7 +22,7 @@ namespace Pokemon_IMIE.usercontrols
 {
     public sealed partial class MesBoutons : BaseUserControl
     {
-        private Fight view;
+        private FightView view;
 
 
 
@@ -38,7 +38,7 @@ namespace Pokemon_IMIE.usercontrols
             }
         }
 
-        public Fight View
+        public FightView View
         {
             get
             {

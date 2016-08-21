@@ -112,7 +112,7 @@ namespace Pokemon_IMIE.ViewModel
 
                 case Windows.System.VirtualKey.C:
 
-                    (Window.Current.Content as Frame).Navigate(typeof(Fight));
+                    (Window.Current.Content as Frame).Navigate(typeof(FightView));
                     break;
 
 

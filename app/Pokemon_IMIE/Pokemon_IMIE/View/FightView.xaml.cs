@@ -3,6 +3,7 @@ using ClassLibrary;
 using Pokemon_IMIE.Model;
 using Pokemon_IMIE.Pages;
 using Pokemon_IMIE.usercontrols;
+using Pokemon_IMIE.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,8 +27,26 @@ namespace Pokemon_IMIE.Pages
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class Fight : Page
+    public sealed partial class FightView : Page
     {
+
+        private FightViewModel fightViewModel;
+
+        public MainButton ReturnButton { get; set; }
+        public PokemonStatus ItsStatus { get; set; }
+        public PokemonStatus MyStatus { get; set; }
+        public MesBoutons MesBoutons { get; set; }
+
+        public FightView()
+        {
+            this.InitializeComponent();
+            this.ReturnButton = this.returnButton;
+            this.ItsStatus = this.itsStatus;
+            this.MyStatus = this.myStatus;
+            this.MesBoutons = this.mesBoutons;
+            this.fightViewModel = new FightViewModel(this);
+
+        }
 
         public PokemonStatus Adversaire
         {
@@ -36,33 +55,6 @@ namespace Pokemon_IMIE.Pages
                 return this.ItsStatus;
             }
         }
-
-
-        public Fight()
-        {
-            init();
-        }
-
-
-        public async void init()
-        {
-            this.InitializeComponent();
-            this.DataContext = this;
-            APIManager apiManager = new APIManager();
-
-            AttaqueResult r = await apiManager.Attaque<AttaqueResult>(10, 35, 11);
-            List<Dresseur> l = await apiManager.GetFromAPI<List<Dresseur>>();
-
-            Dresseur ondine = l[2];
-            Dresseur regis = l[4];
-            Model.Pokemon p = ondine.pokemons[0];
-            Model.Pokemon p2 = regis.pokemons[0];
-            
-            this.ItsStatus.Pokemon = p;
-            this.MyStatus.Pokemon = p2;
-            this.MesBoutons.View = this;
-            this.MesBoutons.Pokemon = p2;
-
-        }
+        
     }
 }

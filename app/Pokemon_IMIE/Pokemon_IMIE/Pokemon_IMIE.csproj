@@ -118,8 +118,8 @@
       <DependentUpon>PokemonStatus.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\FightViewModel.cs" />
-    <Compile Include="View\Fight.xaml.cs">
-      <DependentUpon>Fight.xaml</DependentUpon>
+    <Compile Include="View\FightView.xaml.cs">
+      <DependentUpon>FightView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainPageView.xaml.cs">
       <DependentUpon>MainPageView.xaml</DependentUpon>
@@ -192,7 +192,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Fight.xaml">
+    <Page Include="View\FightView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
